@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Gallery</title>
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <ul>
+      <li>
+        <a href="home.html">Home</a>
+      </li>
+      <li>
+        <a href="">Style</a>
+        <ul>
+          <li>
+            <a href="riddle.html">Riddle</a>
+          </li>
+          <li>
+            <a href="gallery.html">gallery</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="">numbers</a>
+        <ul>
+          <li>
+            <a href="calculator.html">Calculator</a>
+          </li>
+          <li>
+            <a href="binary.html">Binary</a>
+          </li>
+          <li>
+            <a href="vector.html">Vector</a>
+          </li>
+          <li>
+            <a href="series.html">Series</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <br /><br />
+
+    <div class="gallery">
+      <h1>welcome to my gallery:</h1>
+      <img id="big" src="" alt="" />
+      <p>Put the pic number to see it in big!</p>
+      <select id="view">
+        <option value="0">1</option>
+        <option value="1">2</option>
+        <option value="2">3</option>
+        <option value="3">4</option>
+        <option value="4">5</option>
+        <option value="5">6</option>
+        <option value="6">7</option>
+        <option value="7">8</option>
+        <option value="8">9</option>
+      </select>
+      <button onclick="showpic()">SHOW!</button>
+      <br /><br />
+      <br /><br />
+      <script>
+        for (i = 0; i <= 8; i++) {
+          document.write("<img class='imgg' src='img/" + i + ".jpeg'>");
+          if (i % 3 == 2) {
+            document.write("<hr/>");
+          }
+        }
+      </script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Series</title>
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <ul>
+      <li>
+        <a href="home.html">Home</a>
+      </li>
+      <li>
+        <a href="">Style</a>
+        <ul>
+          <li>
+            <a href="riddle.html">Riddle</a>
+          </li>
+          <li>
+            <a href="gallery.html">gallery</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="">numbers</a>
+        <ul>
+          <li>
+            <a href="calculator.html">Calculator</a>
+          </li>
+          <li>
+            <a href="binary.html">Binary</a>
+          </li>
+          <li>
+            <a href="vector.html">Vector</a>
+          </li>
+          <li>
+            <a href="series.html">Series</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <br /><br />
+    <h1>Series</h1>
+    <div class="show">
+      <h2>Chose Base:</h2>
+      <input name="r" id="sd" type="radio" checked />Arithmetic progression<br />
+      <br />
+      <input name="r" id="sq" type="radio" /> geometric progression <br />
+      <br />
+      <button onclick="showse()">SHOW</button>
+      <div id="dorq" class="dorq">
+        <p>a0:</p>
+        <input id="n0" type="text" />
+        <p>n:</p>
+        <input id="n" type="text" />
+        <p id="pdorq"></p>
+        <input id="idorq" type="text" />
+        <p>Series:</p>
+        <p id="series"></p>
+        <p>sum:</p>
+        <p id="sum"></p>
+        <p id="mitcanes"></p>
+        <p id="infisum"></p>
+        <button id="btnd" onclick="Arithmetic()">Click!</button>
+        <button id="btnq" onclick="geometric()">Click!</button>
+      </div>
+    </div>
+  </body>
+</html>

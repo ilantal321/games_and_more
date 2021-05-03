@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <script src="calcscript.js"></script>
+    <ul>
+      <li>
+        <a href="home.html">Home</a>
+      </li>
+      <li>
+        <a href="">style</a>
+        <ul>
+          <li>
+            <a href="riddle.html">Riddle</a>
+          </li>
+          <li>
+            <a href="gallery.html">gallery</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="">numbers</a>
+        <ul>
+          <li>
+            <a href="calculator.html">Calculator</a>
+          </li>
+          <li>
+            <a href="binary.html">Binary</a>
+          </li>
+          <li>
+            <a href="vector.html">Vector</a>
+          </li>
+          <li>
+            <a href="series.html">Series</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <br /><br />
+    <h1>Calculator</h1>
+    <div class="calc">
+      <form name="myform">
+        <input type="text" name="screen" /><br /><br />
+        <input type="button" value="sin" name="btnsin" onclick="fsin()" />
+        <input type="button" value="cos" name="btncos" onclick="fcos()" />
+        <input type="button" value="tan" name="btntan" onclick="ftan()" />
+        <input type="button" value="(" name="btnopen" onclick="clickn('(')" />
+        <input type="button" value=")" name="btnclose" onclick="clickn(')')" />
+        <br />
+        <input type="button" value="!" name="btn!" onclick="fac()" />
+        <input type="button" value="^2" name="btnpow2" onclick="pow2()" />
+        <input type="button" value="RT" name="btnrot2" onclick="rot2()" />
+        <input type="button" value="^N" name="btnpowN" onclick="powN()" />
+        <input type="button" value="RT/N" name="btnrtN" onclick="rotN()" />
+        <input type="button" value="rand" name="btnran" onclick="ran()" />
+        <br />
+        <input type="button" value="7" name="btn7" onclick="clickn('7')" />
+        <input type="button" value="8" name="btn8" onclick="clickn('8')" />
+        <input type="button" value="9" name="btn9" onclick="clickn('9')" />
+        <input type="button" value="DEL" name="btndel" onclick="back()" />
+        <input type="button" value="AC" name="btnac" onclick="ac()" />
+        <br />
+        <input type="button" value="4" name="btn4" onclick="clickn('4')" />
+        <input type="button" value="5" name="btn5" onclick="clickn('5')" />
+        <input type="button" value="6" name="btn6" onclick="clickn('6')" />
+        <input type="button" value="-" name="btnmin" onclick="clickn('-')" />
+        <input type="button" value="+" name="btnplus" onclick="clickn('+')" />
+        <br />
+        <input type="button" value="1" name="btn1" onclick="clickn('1')" />
+        <input type="button" value="2" name="btn2" onclick="clickn('2')" />
+        <input type="button" value="3" name="btn3" onclick="clickn('3')" />
+        <input type="button" value="*" name="btnmul" onclick="clickn('*')" />
+        <input type="button" value="/" name="btndiv" onclick="clickn('/')" />
+        <input type="button" value="%" name="btnd" onclick="clickn('%')" />
+        <br />
+        <input type="button" value="0" name="btn0" onclick="clickn('0')" />
+        <input type="button" value="00" name="btn00" onclick="clickn('00')" />
+        <input type="button" value="." name="btnpoint" onclick="clickn('.')" />
+        <input type="button" value="=" name="btnequal" onclick="equalto()" />
+      </form>
+    </div>
+  </body>
+</html>

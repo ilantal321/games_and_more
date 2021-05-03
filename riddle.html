@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Riddle</title>
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <ul>
+      <li>
+        <a href="home.html">Home</a>
+      </li>
+      <li>
+        <a href="">Style</a>
+        <ul>
+          <li>
+            <a href="riddle.html">Riddle</a>
+          </li>
+          <li>
+            <a href="gallery.html">gallery</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="">numbers</a>
+        <ul>
+          <li>
+            <a href="calculator.html">Calculator</a>
+          </li>
+          <li>
+            <a href="binary.html">Binary</a>
+          </li>
+          <li>
+            <a href="vector.html">Vector</a>
+          </li>
+          <li>
+            <a href="series.html">Series</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <br /><br />
+    <div class="riddle">
+      <h1>Answer the riddle</h1>
+      <button onclick="start()">Start</button>
+      <p>Answer:</p>
+      <input id="uanswer" type="text" />
+      <button onclick="answer()">Answer</button>
+      <br /><br />
+      <img src="img/game.png" id="picgame" />
+      <p>Riddle:</p>
+      <p id="r1"></p>
+    </div>
+  </body>
+</html>
