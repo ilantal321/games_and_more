@@ -1,1 +1,1 @@
-# games_and_more
+A JavaScript website for collage.
